@@ -1,21 +1,29 @@
 import { useFormik } from "formik";
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
-const Login = () => {
+const Signup = () => {
 
-  // Initializing formik
-  const loginForm = useFormik({
+  const navigate = useNavigate();
+
+  const [selImage, setSelImage] = useState('');
+
+  const signupForm = useFormik({
     initialValues: {
-      email: "",
-      password: ""
+      name: '',
+      email: '',
+      password: ''
     },
-    onSubmit: async (values, { resetForm }) => {
-      console.log(values);
-      console.log(import.meta.env.VITE_API_URL);
 
-      const res = await fetch(`${import.meta.env.VITE_API_URL}/user/authenticate`, {
+    onSubmit: async (values) => { 
+      values.avatar = selImage;
+      console.log(values);
+
+      // sending request to backend
+      const res = await fetch('http://localhost:5000/user/add', {
         method: 'POST',
-        body: JSON.stringify(values),
+        body : JSON.stringify(values),
         headers: {
           'Content-Type': 'application/json'
         }
@@ -23,60 +31,62 @@ const Login = () => {
 
       console.log(res.status);
 
-      if (res.status === 200) {
-        // Swal.fire({
-        //   icon: 'success',
-        //   title: 'Nice!',
-        //   text: 'Logged in Successfully 😎'
-        // });
-
-        const data = await res.json();
-        sessionStorage.setItem('user', JSON.stringify(data));
-        // setLoggedIn(true);
-        // resetForm();
-
-      } else if (res.status === 401) {
+      if(res.status === 200){
         Swal.fire({
-          icon: 'error',
-          title: 'Error',
-          text: 'Email or Password is incorrect 😢'
-        })
-      } else {
+          icon : 'success',
+          title : 'Signup Success!!',
+          text: 'Now Login to Continue'
+        });
+        navigate('/login');
+      }else{
         Swal.fire({
-          icon: 'error',
-          title: 'Error',
-          text: 'Something went wrong'
-        })
+          icon : 'error',
+          title : 'Oops!!',
+          text: 'Some Error Occured'
+        });
       }
-      // write code to submit form to server
-    },
-  });
+    }
+  })
+
+  const uploadFile = async (e) => {
+    let file = e.target.files[0];
+    setSelImage(file.name);
+    const fd = new FormData();
+    fd.append('myfile', file);
+
+    const res = await fetch('http://localhost:5000/util/uploadfile', {
+      method: 'POST',
+      body: fd
+    });
+
+    console.log(res.status);
+  };
 
   return (
-    <div
-      className="bg"    >
-      <div className="w-25">
-        <div className="card">
-          <div className="card-body">
-            <h3 className="text-center">Login Form</h3>
-            <hr />
+    <div className="d-flex justify-content-center align-items-center vh-100">
+      <div className="card w-25 shadow-lg rounded-5">
+        <div className="card-body p-5">
+          <i className="fa-solid fa-lock fa-3x d-block text-center" />
+          <h2 className="text-center my-5">Signup Form</h2>
+          <form onSubmit={signupForm.handleSubmit}>
+            <label htmlFor="">Name</label>
+            <input className="form-control mb-4 rounded-5" type="text" name="name" onChange={signupForm.handleChange} value={signupForm.values.name} />
+            <label htmlFor="">Email</label>
+            <input className="form-control mb-4 rounded-5" type="email" name="email" onChange={signupForm.handleChange} value={signupForm.values.email} />
+            <label htmlFor="">Password</label>
+            <input className="form-control mb-4 rounded-5" type="password" name="password" onChange={signupForm.handleChange}  value={signupForm.values.password} />
+            
+            <label htmlFor="">Upload File</label>
+            {/* <input type="file" onChange={uploadFile} /> */}
 
-            <form onSubmit={loginForm.handleSubmit}>
-              <label htmlFor="">Email Address</label>
-              <span style={{ color: 'red', fontSize: '0.7em', marginLeft: 10 }}>{loginForm.errors.email}</span>
-              <input type="email" className="form-control mb-3" name="email" onChange={loginForm.handleChange} value={loginForm.values.email} />
-
-              <label htmlFor="">Password</label>
-              <span style={{ color: 'red', fontSize: '0.7em', marginLeft: 10 }}>{loginForm.errors.password}</span>
-              <input type="password" className="form-control mb-3" name="password" onChange={loginForm.handleChange} value={loginForm.values.password} />
-
-              <button className="btn btn-primary w-100 mt-5">Submit</button>
-            </form>
-          </div>
+            <button className="btn btn-danger w-100 mt-4 rounded-5">
+              Signup
+            </button>
+          </form>
         </div>
       </div>
     </div>
   );
 };
 
-export default Login;
+export default Signup;
