@@ -46,16 +46,11 @@ router.get("/getbyemail/:email", (req, res) => {
 });
 
 router.post("/authenticate", (req, res) => {
-
-  
   Model.findOne(req.body)
   .then((result) => {
       
     if(result){
-
-    
       const payload = { _id : result._id, email : result.email, role : result.role };
-
       // create token
       jwt.sign(
         payload,
@@ -69,9 +64,7 @@ router.post("/authenticate", (req, res) => {
           else res.status(200).json({token : token});
         }
       )
-
     }
-      
       else res.status(401).json({status : 'failed'});
     })
     .catch((err) => {

@@ -31,6 +31,16 @@ const Navbar = () => {
                 Login
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/userprofile">
+                User Profile
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link  " to="/singup">
+                User Profile
+              </NavLink>
+            </li> 
             
           </ul>
           <form className="d-flex" role="search">
