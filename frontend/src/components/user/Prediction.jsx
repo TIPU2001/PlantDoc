@@ -48,7 +48,7 @@ const options = {
   plants: ["aloevera"],
 };
 
-const PredictDiesease = () => {
+const Prediction = () => {
   const [saveHistoryOption, setsaveHistoryOption] = useState(false);
 
   const [AIModels, setAIModels] = useState([]);
@@ -658,4 +658,4 @@ const PredictDiesease = () => {
     </Box>
   );
 };
-export default PredictDiesease;
+export default Prediction;
