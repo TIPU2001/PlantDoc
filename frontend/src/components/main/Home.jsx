@@ -341,25 +341,6 @@ const Home = () => {
             of India's significant role in food production.
           </div>
         </div>
-        <div className="accordion-item">
-          <input type="checkbox" id="accordion5" />
-          <label htmlFor="accordion5" className="accordion-item-title">
-            <span className="icon" />
-            Who Manage Green Doctor?
-          </label>
-          <div className="accordion-item-desc">
-            The founders of Green Doctor are Omkar Sharma and Rasheeq Zehra.
-            Both are Computer Science Graduate. They initiated the development
-            of Green Doctor to address real-time issues related to plant health.
-            Green Doctor prioritizes system accuracy, ensuring predictions
-            exceed 95%. The platform recommends effective and quality products
-            for crop care while offering a clean and simple user interface.
-            Importantly, the services provided by Green Doctor are accessible to
-            users free of cost. This initiative aligns with the goal of
-            promoting sustainable agriculture and supporting the economy through
-            enhanced food production.
-          </div>
-        </div>
       </div>
     </>
   );
