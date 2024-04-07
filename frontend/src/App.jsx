@@ -1,14 +1,24 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import './App.css'
-import Home from './components/Home';
-import Login from './components/Login';
-import Signup from './components/Signup';
-import {ThemeProvider} from '@mui/material';
+import "./App.css";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import Main from "./components/main";
+import Home from "./components/main/Home";
+import Login from "./components/main/Login";
+import Signup from "./components/main/Signup";
+import User from "./components/user";
+import Profile from "./components/user/Profile";
+import { ThemeProvider, createTheme } from "@mui/material";
+import Admin from "./components/admin";
+import ManageUser from "./components/admin/ManageUser";
+import ResetPassword from "./components/main/ResetPassword";
+import Prediction from "./components/user/Prediction";
+import History from "./components/user/History";
+import Dashboard from "./components/user/Dashboard";
+import CssBaseline from "@mui/material/CssBaseline";
+import { useState } from "react";
+import { AppProvider } from "./context/AppContext";
 
 function App() {
 
-  const {user , loginWithRedirect } = useAuth0();
-  console.log("current user : " ,user);
   const theme = createTheme({});
   const [toggleDarkMode, setToggleDarkMode] = useState(false);
 
@@ -27,12 +37,7 @@ function App() {
        <ThemeProvider theme={darkTheme}>
         <CssBaseline />
         <BrowserRouter>
-        <Auth0Provider
-        domain="dev-spgtplnzvs7tyejk.us.auth0.com"
-        clientId="szAycWeYU35FJ5t1GW3A631ThP59ENpo"
-        authorizationParams={{
-          redirect_uri: window.location.origin
-        }}>
+        
           <AppProvider>
             <Routes>
               <Route path="/" element={<Navigate to="/main/home" />} />
@@ -56,7 +61,6 @@ function App() {
               </Route>
             </Routes>
           </AppProvider>
-          </Auth0Provider>
         </BrowserRouter>
       </ThemeProvider>
     </>
