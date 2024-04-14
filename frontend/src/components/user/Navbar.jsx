@@ -14,7 +14,6 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { NavLink, useNavigate } from "react-router-dom";
 import useAppContext from "../../context/AppContext";
-import { useAuth0 } from "@auth0/auth0-react";
 import { Badge, CssBaseline, Modal, Paper, createTheme } from "@mui/material";
 import MailIcon from "@mui/icons-material/Mail";
 import { useState } from "react";
@@ -55,7 +54,6 @@ function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const navigate = useNavigate();
-  const { loginWithRedirect, user, isLoading } = useAuth0();
   const [openModal, setOpenModal] = useState(false);
 
   const settings = [

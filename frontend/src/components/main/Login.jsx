@@ -21,14 +21,11 @@ import { NavLink, useNavigate } from "react-router-dom";
 import useAppContext from "../../context/AppContext";
 import { useFormik } from "formik";
 import Swal from "sweetalert2";
-import GoogleIcon from "@mui/icons-material/Google";
-import { useAuth0 } from "@auth0/auth0-react";
 
 
 const Login = () => {
   const [showPassword, setShowPassword] = React.useState(false);
   // const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const { loginWithRedirect, user, isLoading } = useAuth0();
   const handleClickShowPassword = () => setShowPassword((show) => !show);
 
   const handleMouseDownPassword = (event) => {
@@ -212,24 +209,7 @@ const Login = () => {
                   >
                     or{" "}
                   </Divider>
-                  <Button
-                    onClick={(e) => loginWithRedirect() }
-                    variant="outlined"
-                    disableElevation
-                    sx={{
-                      mt: 2,
-                      borderRadius: 5,
-                      textTransform: "none",
-                      mb: 1,
-                    }}
-                    fullWidth
-                    color="success"
-                  >
-                    <InputAdornment position="start">
-                      <GoogleIcon />
-                    </InputAdornment>
-                    Sign in with Google
-                  </Button>
+                 
                   <p variant="h6">
                     Dont Have an account?
                     <NavLink

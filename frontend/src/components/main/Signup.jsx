@@ -24,7 +24,6 @@ import Swal from "sweetalert2";
 import GoogleIcon from "@mui/icons-material/Google";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useAuth0 } from "@auth0/auth0-react";
 
 const SignupSchema = Yup.object().shape({
   name: Yup.string()
@@ -47,7 +46,6 @@ const SignupSchema = Yup.object().shape({
 const Signup = () => {
   const [showPassword, setShowPassword] = React.useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = React.useState(false);
-  const { loginWithRedirect, user, isLoading } = useAuth0();
 
   const handleClickShowPassword = () => setShowPassword((show) => !show);
   const handleClickShowConfirmPassword = () =>
@@ -268,25 +266,7 @@ const Signup = () => {
                     >
                       or{" "}
                     </Divider>
-                    <Button
-                    onClick={(e) => loginWithRedirect() }
-                      // type="submit"
-                      variant="outlined"
-                      disableElevation
-                      sx={{
-                        mt: 2,
-                        mb: 1,
-                        borderRadius: 5,
-                        textTransform: "none",
-                      }}
-                      fullWidth
-                      color="success"
-                    >
-                      <InputAdornment position="start">
-                        <GoogleIcon />
-                      </InputAdornment>
-                      Sign up with Google
-                    </Button>
+                   
                     <p variant="h6">
                       Already Have an account?
                       <NavLink
