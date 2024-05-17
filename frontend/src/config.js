@@ -74,7 +74,17 @@ const app_config = {
                 summary: 'Simply mix half a litre of milk with two tablespoons of baking soda in five litres of water and spray liberally over foliage and stems. This formula can be applied at any time of the year.',
             },
             itemId: '6476076e2032483d324773e6'
+            
         },
+        {
+            diseaseName: 'Rose downy mildew,' ,
+            cure: {
+                image: 'https://www.nurserymag.com/remote/aHR0cHM6Ly9naWVjZG4uYmxvYi5jb3JlLndpbmRvd3MubmV0L2ZpbGV1cGxvYWRzL3B1YmxpY2F0aW9ucy8xNi9pc3N1ZXMvMTAzNjcxL2FydGljbGVzL2ltYWdlcy9yb3NlLWRvd255LW1pbGRldy13ZWIuanBn.kgR1rinWHwg.jpg?w=948&h=533&format=webp&mode=pad&anchor=middlecenter&scale=both&bgcolor=F0F1F2'
+                heading: 'Rose doeny mildew,',
+                summary: 'There are two chemical application strategies for managing downy mildew: a scheduled spray program using a range of preventative fungicides; and a 'wait and see' approach, which involves waiting until the primary infection occurs and then immediately applying post-infection products.'
+            }
+
+        }
     ]
 };
 
