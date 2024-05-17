@@ -16,6 +16,7 @@ import Dashboard from "./components/user/Dashboard";
 import CssBaseline from "@mui/material/CssBaseline";
 import { useState } from "react";
 import { AppProvider } from "./context/AppContext";
+import CurePage from "./components/user/CurePage";
 
 function App() {
 
@@ -54,6 +55,7 @@ function App() {
                 <Route path="prediction" element={<Prediction />} />
                 <Route path="history" element={<History />} />
                 <Route path="dashboard" element={<Dashboard />} />
+                <Route path="cure" element={<CurePage />} />
               </Route>
 
               <Route path="admin" element={<Admin />}>

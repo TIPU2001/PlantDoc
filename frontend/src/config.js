@@ -44,6 +44,16 @@ const app_config = {
                 summary: `Early blight is primarily a disease of stressed or senescing plants. Symptoms appear first on the oldest foliage. Affected leaves develop circular to angular dark brown lesions 0.12 to 0.16 inch (3–4 mm) in diameter. Concentric rings often form in lesions to produce characteristic target-board effect. Severely infected leaves turn yellow and drop. Infected tubers show a brown, corky dry rot. Early blight can be minimized by maintaining optimum growing conditions, including proper fertilization, irrigation, and management of other pests. Grow later maturing, longer season varieties. Fungicide application is justified only when the disease is initiated early enough to cause economic loss. Watch for disease symptoms during routine monitoring, and keep records of your results (example form—PDF). When justified, apply fungicides as soon as symptoms appear; continued protection requires application at 7- to 10-day intervals.`
             },
             itemId: '6476076e2032483d324773e6'
+        },
+        {
+            diseaseName: 'Apple Scab',
+            cure: {
+                image: 'https://extension.umn.edu/sites/extension.umn.edu/files/Apple-scab-advanced-leaves-Grabowski.jpg',
+                heading: 'Apple Scab',
+                summary: `Apple scab is caused by the fungus Venturia inaequalis. It infects crabapples and apples (Malus spp.), mountain ash (Sorbus spp.), pear (Pyrus communis) and Cotoneaster (Cotoneaster spp.).
+
+                The apple scab fungus has several host-specific strains that can cause disease on one type of plant but not any other. For example, the strain of V. inaequalis that infects mountain ash will only infect other mountain ash trees and will not infect crabapple trees. Apple and crabapple trees are infected by the same strain of the apple scab fungus because the trees are in the same genus.`            },
+            itemId: '6476076e2032483d324773e6'
         }
     ]
 };

@@ -107,7 +107,7 @@ const Profile = () => {
             >
               <Avatar
                 alt="Remy Sharp"
-                src="https://avatars.githubusercontent.com/u/108568853?v=4"
+                src=""
                 sx={{
                   display: "block",
                   margin: "auto",
@@ -116,7 +116,7 @@ const Profile = () => {
                 }}
               />
               <Typography variant="h3" mb={2} mt={2} fontSize="1.6rem" color="#333333">
-                Rasheeq Zehra
+                
               </Typography>
               <p style={{ color: '#333333' }}>Fetching user info....</p>
               <Modal open={openModal} onClose={handleCloseModal}>
