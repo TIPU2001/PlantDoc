@@ -81,9 +81,23 @@ const app_config = {
             cure: {
                 image: 'https://www.nurserymag.com/remote/aHR0cHM6Ly9naWVjZG4uYmxvYi5jb3JlLndpbmRvd3MubmV0L2ZpbGV1cGxvYWRzL3B1YmxpY2F0aW9ucy8xNi9pc3N1ZXMvMTAzNjcxL2FydGljbGVzL2ltYWdlcy9yb3NlLWRvd255LW1pbGRldy13ZWIuanBn.kgR1rinWHwg.jpg?w=948&h=533&format=webp&mode=pad&anchor=middlecenter&scale=both&bgcolor=F0F1F2'
                 heading: 'Rose doeny mildew,',
-                summary: 'There are two chemical application strategies for managing downy mildew: a scheduled spray program using a range of preventative fungicides; and a 'wait and see' approach, which involves waiting until the primary infection occurs and then immediately applying post-infection products.'
+                summary: 'There are two chemical application strategies for managing downy mildew: a scheduled spray program using a range of preventative fungicides; and a wait and see approach, which involves waiting until the primary infection occurs and then immediately applying post-infection products.'
             }
 
+        },
+        {
+            diseaseName: 'Rose anthracnose,',
+        cure: {
+            image:'https://c7.alamy.com/comp/AM1EJJ/leaf-from-a-rose-with-anthracnose-AM1EJJ.jpg,'
+            heading: 'Rose anthracnose,',
+            summary:'Well-spaced plants and drip irrigation may slow the spread of this disease. Fungicides approved for black spot and CLS are usually effective against anthracnose. Figure 5. Anthracnose leaf spots on rose.',
+        }
+        },
+        {
+            diseaseName: 'Rose gray mold,',
+            cure{
+                image: ''
+            }
         }
     ]
 };
