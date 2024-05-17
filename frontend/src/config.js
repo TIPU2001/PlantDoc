@@ -52,16 +52,29 @@ const app_config = {
                 heading: 'Apple Scab',
                 summary: `Apple scab is caused by the fungus Venturia inaequalis. It infects crabapples and apples (Malus spp.), mountain ash (Sorbus spp.), pear (Pyrus communis) and Cotoneaster (Cotoneaster spp.).
 
-                The apple scab fungus has several host-specific strains that can cause disease on one type of plant but not any other. For example, the strain of V. inaequalis that infects mountain ash will only infect other mountain ash trees and will not infect crabapple trees. Apple and crabapple trees are infected by the same strain of the apple scab fungus because the trees are in the same genus.`            },
+                The apple scab fungus has several host-specific strains that can cause disease on one type of plant but not any other. For example, the strain of V. inaequalis that infects mountain ash will only infect other mountain ash trees and will not infect crabapple trees. Apple and crabapple trees are infected by the same strain of the apple scab fungus because the trees are in the same genus.`
+            },
             itemId: '6476076e2032483d324773e6'
 
         },
         {
-            diseaseName: 'Rose black spot' ,
-            image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gardendesign.com%2Fhow-to%2Fblack-spot.html&psig=AOvVaw32J8dDqlOe1sMGt5EstPvo&ust=1716009031781000&source=images&opi=89978449'
-            heading: 'Rose black spot',
-            summary:'If rose growers had a public enemy number one, it would surely be black spot—a menacing fungal disease that poses a threat to roses. Once black spot disease begins attacking your roses, it can be very difficult to control and manage. Here are some tips for controlling black spot and how to minimize its impact on the health, beauty, and longevity of your plants.'
-        }
+            diseaseName: 'Rose black spot',
+            cure: {
+                image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gardendesign.com%2Fhow-to%2Fblack-spot.html&psig=AOvVaw32J8dDqlOe1sMGt5EstPvo&ust=1716009031781000&source=images&opi=89978449',
+                heading: 'Rose black spot',
+                summary: 'If rose growers had a public enemy number one, it would surely be black spot—a menacing fungal disease that poses a threat to roses. Once black spot disease begins attacking your roses, it can be very difficult to control and manage. Here are some tips for controlling black spot and how to minimize its impact on the health, beauty, and longevity of your plants.',
+            },
+            itemId: '6476076e2032483d324773e6'
+        },
+        {
+            diseaseName: 'Rose powdery mildew,',
+            cure: {
+                image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sciencephoto.com%2Fmedia%2F826587%2Fview%2Fpowdery-mildew-on-rose&psig=AOvVaw2oGE1wq5VgzjM4-OcRsdQt&ust=1716009950988000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOip-K35k4YDFQAAAAAdAAAAABAE',
+                heading: 'Rose powdery mildew,',
+                summary: 'Simply mix half a litre of milk with two tablespoons of baking soda in five litres of water and spray liberally over foliage and stems. This formula can be applied at any time of the year.',
+            },
+            itemId: '6476076e2032483d324773e6'
+        },
     ]
 };
 
