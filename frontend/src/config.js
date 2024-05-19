@@ -74,31 +74,34 @@ const app_config = {
                 summary: 'Simply mix half a litre of milk with two tablespoons of baking soda in five litres of water and spray liberally over foliage and stems. This formula can be applied at any time of the year.',
             },
             itemId: '6476076e2032483d324773e6'
-            
         },
         {
-            diseaseName: 'Rose downy mildew,' ,
+            diseaseName: 'Rose downy mildew,',
             cure: {
-                image: 'https://www.nurserymag.com/remote/aHR0cHM6Ly9naWVjZG4uYmxvYi5jb3JlLndpbmRvd3MubmV0L2ZpbGV1cGxvYWRzL3B1YmxpY2F0aW9ucy8xNi9pc3N1ZXMvMTAzNjcxL2FydGljbGVzL2ltYWdlcy9yb3NlLWRvd255LW1pbGRldy13ZWIuanBn.kgR1rinWHwg.jpg?w=948&h=533&format=webp&mode=pad&anchor=middlecenter&scale=both&bgcolor=F0F1F2'
-                heading: 'Rose doeny mildew,',
+                image: 'https://www.nurserymag.com/remote/aHR0cHM6Ly9naWVjZG4uYmxvYi5jb3JlLndpbmRvd3MubmV0L2ZpbGV1cGxvYWRzL3B1YmxpY2F0aW9ucy8xNi9pc3N1ZXMvMTAzNjcxL2FydGljbGVzL2ltYWdlcy9yb3NlLWRvd255LW1pbGRldy13ZWIuanBn.kgR1rinWHwg.jpg?w=948&h=533&format=webp&mode=pad&anchor=middlecenter&scale=both&bgcolor=F0F1F2',
+                heading: 'Rose doeny mildew',
                 summary: 'There are two chemical application strategies for managing downy mildew: a scheduled spray program using a range of preventative fungicides; and a wait and see approach, which involves waiting until the primary infection occurs and then immediately applying post-infection products.'
             }
 
         },
         {
             diseaseName: 'Rose anthracnose,',
-        cure: {
-            image:'https://c7.alamy.com/comp/AM1EJJ/leaf-from-a-rose-with-anthracnose-AM1EJJ.jpg,'
-            heading: 'Rose anthracnose,',
-            summary:'Well-spaced plants and drip irrigation may slow the spread of this disease. Fungicides approved for black spot and CLS are usually effective against anthracnose. Figure 5. Anthracnose leaf spots on rose.',
-        }
+            cure: {
+                image: 'https://c7.alamy.com/comp/AM1EJJ/leaf-from-a-rose-with-anthracnose-AM1EJJ.jpg',
+                heading: 'Rose anthracnose,',
+                summary: 'Well-spaced plants and drip irrigation may slow the spread of this disease. Fungicides approved for black spot and CLS are usually effective against anthracnose. Figure 5. Anthracnose leaf spots on rose.',
+            }
         },
         {
             diseaseName: 'Rose gray mold,',
-            cure{
-                image: ''
+            cure:
+            {
+                image: 'https://in.images.search.yahoo.com/search/images;_ylt=AwrKB4zPi0lmxso1Rsa7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Nj?p=Rose+gray+mold+pic&vm=r&type=E210IN826G0&ei=UTF-8&fr=mcafee&th=113.6&tw=154.7&imgurl=https%3A%2F%2Fc8.alamy.com%2Fcomp%2FEA4E1M%2Fgrey-mould-botrytis-cinerea-causing-leaf-dieback-on-rose-in-autum-EA4E1M.jpg&rurl=https%3A%2F%2Fwww.alamy.com%2Fstock-photo-grey-mould-botrytis-cinerea-causing-leaf-dieback-on-rose-in-autum-75086864.html&size=218KB&name=Grey+mould%2C+Botrytis+cinerea%2C+causing+leaf+dieback+on+rose+in+autum+...&oid=3&h=955&w=1300&turl=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.-26KroVmo-7AJYhsiOXQvQHaFc%26pid%3DApi%26rs%3D1%26c%3D1%26qlt%3D95%26w%3D154%26h%3D113&tt=Grey+mould%2C+Botrytis+cinerea%2C+causing+leaf+dieback+on+rose+in+autum+...&sigr=8IP_O7oisfPs&sigit=E881eM.L3T7v&sigi=qnPiuJrL1SVI&sign=Bg9eUA1GfU18&sigt=Bg9eUA1GfU18',
+                heading: 'Rose gray mold,',
+                summary: "If a gray mold infection breaks out in your garden, the most effective control method is to promptly prune off diseased portions of the plant (or remove the entire plant if fully infected) and place them in a bag for disposal. Don't compost infected plants because the spores can remain active.",
             }
-        }
+
+        },
     ]
 };
 
