@@ -55,6 +55,20 @@ const app_config = {
                 The apple scab fungus has several host-specific strains that can cause disease on one type of plant but not any other. For example, the strain of V. inaequalis that infects mountain ash will only infect other mountain ash trees and will not infect crabapple trees. Apple and crabapple trees are infected by the same strain of the apple scab fungus because the trees are in the same genus.`
             },
             itemId: '6476076e2032483d324773e6'
+        },
+        {
+            diseaseName: 'Wheat Powdery mildew',
+            cure: 
+            {
+                image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.agric.wa.gov.au%2Fspring%2Fmanaging-powdery-mildew-wheat&psig=AOvVaw2W92Gc9kj1_W0LbtQRpU0X&ust=1716188083907000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPiX2PeQmYYDFQAAAAAdAAAAABAE',
+                heading: 'Wheat Powdery mildew',
+                summary: 'Foliar fungicides can be used to control powdery mildew infection, application early in disease development is most effective. Avoid sowing back into wheat stubble from highly infected crops, mildew is carried as fruiting bodies on infested stubble. Wheat powdery mildew only infects wheat'
+            },
+            itemId: '6476076e2032483d324773e6'
+          
+    
+
+
 
         },
         {
