@@ -58,15 +58,27 @@ const app_config = {
         },
         {
             diseaseName: 'Wheat Powdery mildew',
-            cure: 
+            cure:
             {
                 image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.agric.wa.gov.au%2Fspring%2Fmanaging-powdery-mildew-wheat&psig=AOvVaw2W92Gc9kj1_W0LbtQRpU0X&ust=1716188083907000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPiX2PeQmYYDFQAAAAAdAAAAABAE',
                 heading: 'Wheat Powdery mildew',
                 summary: 'Foliar fungicides can be used to control powdery mildew infection, application early in disease development is most effective. Avoid sowing back into wheat stubble from highly infected crops, mildew is carried as fruiting bodies on infested stubble. Wheat powdery mildew only infects wheat'
             },
             itemId: '6476076e2032483d324773e6'
-          
-    
+        },
+        {
+            diseaseName: 'Wheat ',
+            cure:
+            {
+                image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.agric.wa.gov.au%2Fspring%2Fmanaging-powdery-mildew-wheat&psig=AOvVaw2W92Gc9kj1_W0LbtQRpU0X&ust=1716188083907000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPiX2PeQmYYDFQAAAAAdAAAAABAE',
+                heading: 'Wheat Powdery mildew',
+                summary: 'Foliar fungicides can be used to control powdery mildew infection, application early in disease development is most effective. Avoid sowing back into wheat stubble from highly infected crops, mildew is carried as fruiting bodies on infested stubble. Wheat powdery mildew only infects wheat'
+            },
+            itemId: '6476076e2032483d324773e6'
+
+
+
+
 
 
 
@@ -95,8 +107,8 @@ const app_config = {
                 image: 'https://www.nurserymag.com/remote/aHR0cHM6Ly9naWVjZG4uYmxvYi5jb3JlLndpbmRvd3MubmV0L2ZpbGV1cGxvYWRzL3B1YmxpY2F0aW9ucy8xNi9pc3N1ZXMvMTAzNjcxL2FydGljbGVzL2ltYWdlcy9yb3NlLWRvd255LW1pbGRldy13ZWIuanBn.kgR1rinWHwg.jpg?w=948&h=533&format=webp&mode=pad&anchor=middlecenter&scale=both&bgcolor=F0F1F2',
                 heading: 'Rose doeny mildew',
                 summary: 'There are two chemical application strategies for managing downy mildew: a scheduled spray program using a range of preventative fungicides; and a wait and see approach, which involves waiting until the primary infection occurs and then immediately applying post-infection products.'
-            }
-
+            },
+            itemId: '6476076e2032483d324773e6'
         },
         {
             diseaseName: 'Rose anthracnose,',
@@ -104,7 +116,8 @@ const app_config = {
                 image: 'https://c7.alamy.com/comp/AM1EJJ/leaf-from-a-rose-with-anthracnose-AM1EJJ.jpg',
                 heading: 'Rose anthracnose,',
                 summary: 'Well-spaced plants and drip irrigation may slow the spread of this disease. Fungicides approved for black spot and CLS are usually effective against anthracnose. Figure 5. Anthracnose leaf spots on rose.',
-            }
+            },
+            itemId: '6476076e2032483d324773e6'
         },
         {
             diseaseName: 'Rose gray mold,',
@@ -113,10 +126,32 @@ const app_config = {
                 image: 'https://in.images.search.yahoo.com/search/images;_ylt=AwrKB4zPi0lmxso1Rsa7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Nj?p=Rose+gray+mold+pic&vm=r&type=E210IN826G0&ei=UTF-8&fr=mcafee&th=113.6&tw=154.7&imgurl=https%3A%2F%2Fc8.alamy.com%2Fcomp%2FEA4E1M%2Fgrey-mould-botrytis-cinerea-causing-leaf-dieback-on-rose-in-autum-EA4E1M.jpg&rurl=https%3A%2F%2Fwww.alamy.com%2Fstock-photo-grey-mould-botrytis-cinerea-causing-leaf-dieback-on-rose-in-autum-75086864.html&size=218KB&name=Grey+mould%2C+Botrytis+cinerea%2C+causing+leaf+dieback+on+rose+in+autum+...&oid=3&h=955&w=1300&turl=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.-26KroVmo-7AJYhsiOXQvQHaFc%26pid%3DApi%26rs%3D1%26c%3D1%26qlt%3D95%26w%3D154%26h%3D113&tt=Grey+mould%2C+Botrytis+cinerea%2C+causing+leaf+dieback+on+rose+in+autum+...&sigr=8IP_O7oisfPs&sigit=E881eM.L3T7v&sigi=qnPiuJrL1SVI&sign=Bg9eUA1GfU18&sigt=Bg9eUA1GfU18',
                 heading: 'Rose gray mold,',
                 summary: "If a gray mold infection breaks out in your garden, the most effective control method is to promptly prune off diseased portions of the plant (or remove the entire plant if fully infected) and place them in a bag for disposal. Don't compost infected plants because the spores can remain active.",
-            }
+            },
+            itemId: '6476076e2032483d324773e6'
 
         },
+        {
+            diseaseName: 'Stripe Rust',
+            cure:
+            {
+                image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cropscience.bayer.us%2Farticles%2Fcp%2Fwheat-rust-diseases&psig=AOvVaw1fzE60GUlFUnYSLogxy2jC&ust=1716189928467000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOCG7-uXmYYDFQAAAAAdAAAAABAE',
+                heading: 'Stripe rust,',
+                summary: "Good control of wheat rusts can be achieved with commercially available fungicides and proper application timing. The decision to use fungicides should be based on scouting for symptoms. It's important to assess disease severity from the onset of infection through the various growth stages"
+            },
+            itemId: '6476076e2032483d324773e6'
+        },
+        {
+            diseaseName: 'Septoria',
+            cure:
+            {
+                image: 'https://stmaaprodfwsite.blob.core.windows.net/assets/sites/1/2017/02/Septoria-on-leaf-1-c-Blackthorn-Arable.jpg',
+                heading: 'Septoria',
+                summary: "Use varieties with some resistance. Burying residue may reduce disease incidence. Foliar-applied fungicides will reduce losses but crops should be monitored closely around flag leaf emergence and sprayed when only small spots are present on upper leaves."
+            },
+            itemId: '6476076e2032483d324773e6'
+        },
     ]
+
 };
 
 export default app_config;
