@@ -56,6 +56,10 @@ function ResponsiveAppBar() {
   const navigate = useNavigate();
   const [openModal, setOpenModal] = useState(false);
 
+  const [currentUser, setCurrentUser] = useState(
+    JSON.parse(sessionStorage.getItem('user'))
+  );
+
   const settings = [
     {
       text: "My Profile",
@@ -237,7 +241,7 @@ function ResponsiveAppBar() {
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                   <Avatar
                     alt="Remy Sharp"
-                    src="https://avatars.githubusercontent.com/u/108568853?v=4"
+                    src={'http://localhost:5000/'+currentUser.avatar}
                   />
                 </IconButton>
               </Tooltip>
