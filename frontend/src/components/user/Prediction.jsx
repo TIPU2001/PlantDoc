@@ -205,7 +205,7 @@ const Prediction = () => {
     setPredictionLoading(true);
     const prediction = await model.predict(loadedImage);
     setPredictionLoading(false);
-    console.log(prediction);
+    console.table(prediction);
     let res = predictionResultExtractor(prediction);
     console.log(res);
     // if (res.probability === 1) {

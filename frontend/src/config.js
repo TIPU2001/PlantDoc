@@ -37,7 +37,7 @@ const app_config = {
             itemId: '6476076e2032483d324773e6'
         },
         {
-            diseaseName: 'potato early blight',
+            diseaseName: 'Potato: Early Blight ',
             cure: {
                 image: 'https://newagriindia.com/wp-content/uploads/2022/02/Early-blight-of-potato-1024x536.jpg',
                 heading: 'Potato Early Blight',
@@ -150,7 +150,20 @@ const app_config = {
             },
             itemId: '6476076e2032483d324773e6'
         },
+        {
+            {
+                diseaseName: 'Tomato: Bacterial Spot ',
+                cure:
+                {
+                    image: 'https://www.growingproduce.com/wp-content/uploads/2019/08/bacterial_spot_tomato.jpg',
+                    heading: 'Tomato: Bacterial Spot ',
+                    summary: "Use drip irrigation and avoid overhead irrigation if possible. Water plants in the morning to allow water on plants to evaporate quickly. Avoid handling plants while plants are wet. Pesticide: For homeowners, copper products or copper plus mancozeb are registered and effective to control bacterial spot of tomato." ,
+                },
+                itemId: '6476076e2032483d324773e6'
+            },
+        }
     ]
+
 
 };
 
