@@ -2,6 +2,7 @@
 const express = require('express');
 const UserRouter = require('./routers/userRouter');
 const ProductRouter = require('./routers/productRouter');
+const historyRouter = require('./routers/historyRouter');
 const UtilRouter = require('./routers/util');
 
 const cors = require('cors');
@@ -20,6 +21,7 @@ app.use(express.json());
 app.use('/user', UserRouter);
 app.use('/product', ProductRouter);
 app.use('/util', UtilRouter);
+app.use('/history', historyRouter);
 
 app.use(express.static('./uploads'));
 
