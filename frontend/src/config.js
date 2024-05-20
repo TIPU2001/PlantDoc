@@ -14,11 +14,21 @@ const app_config = {
         },
 
         {
-            diseaseName: 'peach bacterial spot',
+            diseaseName: 'Peach: Bacterial Spot ',
             cure: {
                 image: 'https://www.growingproduce.com/wp-content/uploads/2015/05/bacterial-spot-on-peach-leaf.jpg',
                 heading: 'Peach Bacterial Spot',
                 summary: `Bacterial spot is an important disease of peaches, nectarines, apricots, and plums caused by Xanthomonas campestris pv. pruni. Symptoms of this disease include fruit spots, leaf spots, and twig cankers. Fruit symptoms include pitting, cracking, gumming, and watersoaked tissue, which can make the fruit more susceptible to brown rot, rhizopus, and other fungal infections. Severe leaf spot infections can cause early defoliation. Severe defoliation can result in reduced fruit size, and sunburn and cracking of fruit. Early defoliated trees are reduced in vigor and winter hardiness. Fruit symptoms of bacterial spot may be confused with peach scab, caused by the fungus Cladosporium carpophyllium, however scab spots are more circular, have a dark brown/greenish, fuzzy appearance, and do not pit the fruit surface, although skin cracking can occur. Scab does not cause leaf symptoms but can cause spots on twigs. Initial fruit spots of bacterial spot may be superficial but develop into craters.`
+            },
+            itemId: '6476076e2032483d324773e6'
+        },
+        {
+            diseaseName: 'Pepper: Bacterial Spot',
+            cure: {
+                image: 'https://peppergeek.com/wp-content/uploads/2021/06/Bacterial-leaf-spot-peppers-white.jpg',
+                heading: 'Pepper: Bacterial Spot Disease',
+                summary: `As there are up to 11 different known strains of the pathogen, resistant varieties need to be resistant against all prevalent strains in an area. Sweet pepper varieties with resistance against all or multiple strains are available. A few of them are F1 of Autry, Green Flash, Labelle, Ninja, Outsider, Playmaker, Prowler, Raven, Samurai, SB3255 PB and Tracer. Additionally, Green Machine, Antebellum with X10R and 4288a with bs5+bs6 genes (intermediate resistance) can be used. A full list can be found at: http://vegetablemdonline.ppath.cornell.edu/Tables/TableList.htm
+                The most effective management strategy is the use of pathogen-free certified seeds and disease-free transplants to prevent introduction of the pathogen into greenhouses and field production areas. It is prudent to grow own transplants under sanitary conditions to avo id importing bacterial leaf spot on seedlings purchased from off-farm sources. Inspect plants very carefully and reject infected transplants, including your own. Buy seeds from a reputable company or treat your own seeds by following either of the methods described below.`
             },
             itemId: '6476076e2032483d324773e6'
         },
@@ -39,9 +49,18 @@ const app_config = {
         {
             diseaseName: 'Potato: Early Blight ',
             cure: {
-                image: 'https://newagriindia.com/wp-content/uploads/2022/02/Early-blight-of-potato-1024x536.jpg',
-                heading: 'Potato Early Blight',
+                image: 'https://www.potatogrower.com/Images/0513/EB%20lesions1_opt.jpeg',
+                heading: 'Potato Early Blight Disease',
                 summary: `Early blight is primarily a disease of stressed or senescing plants. Symptoms appear first on the oldest foliage. Affected leaves develop circular to angular dark brown lesions 0.12 to 0.16 inch (3–4 mm) in diameter. Concentric rings often form in lesions to produce characteristic target-board effect. Severely infected leaves turn yellow and drop. Infected tubers show a brown, corky dry rot. Early blight can be minimized by maintaining optimum growing conditions, including proper fertilization, irrigation, and management of other pests. Grow later maturing, longer season varieties. Fungicide application is justified only when the disease is initiated early enough to cause economic loss. Watch for disease symptoms during routine monitoring, and keep records of your results (example form—PDF). When justified, apply fungicides as soon as symptoms appear; continued protection requires application at 7- to 10-day intervals.`
+            },
+            itemId: '6476076e2032483d324773e6'
+        },
+        {
+            diseaseName: 'Potato: Late Blight',
+            cure: {
+                image: 'https://upload.wikimedia.org/wikipedia/commons/a/aa/Late_blight_on_potato_leaf_2.jpg',
+                heading: 'Potato: Late Blight Disease',
+                summary: `Chemical management is very popular strategy for the management of late blight. Since the discovery of Bordeaux mixture in 1885 and it was first important landmark in the history of chemical disease control. Bordeaux mixture belongs to first generation of fungicides along with other inorganic chemicals. After more than 130 years, the introduction of Bordeaux mixture (Copper sulfate, hydrated lime and water), large numbers of fungicides (first generation Bordeaux mixture to fourth generation Mandipropamid & Azoxystrobin) were evaluated at worldwide against late blight of potato/tomato. In practice, the traditional management of late blight depends highly on preventative fungicides, application on a regular calendar basis (e.g. weekly) during the growing season [30]. The population diversity and disease incidence of P. infestans has been increased through the development of systemic fungicide resistance (insensitivity) and the transcontinental shipment of the late blight infected potato tubers and tomato plantlets [31]. Metalaxyl fungicide which comes under Phenylamide group with FARC 4, was introduced against oomycetes, very effective for late blight management and highly adopted worldwide.`
             },
             itemId: '6476076e2032483d324773e6'
         },
@@ -53,6 +72,28 @@ const app_config = {
                 summary: `Apple scab is caused by the fungus Venturia inaequalis. It infects crabapples and apples (Malus spp.), mountain ash (Sorbus spp.), pear (Pyrus communis) and Cotoneaster (Cotoneaster spp.).
 
                 The apple scab fungus has several host-specific strains that can cause disease on one type of plant but not any other. For example, the strain of V. inaequalis that infects mountain ash will only infect other mountain ash trees and will not infect crabapple trees. Apple and crabapple trees are infected by the same strain of the apple scab fungus because the trees are in the same genus.`
+            },
+            itemId: '6476076e2032483d324773e6'
+        },
+        {
+            diseaseName: 'Black Rot',
+            cure: {
+                image: 'https://ipm.missouri.edu/meg/2020/6/blackRotApple-MW/blackRotLesionsApple.jpg',
+                heading: 'Apple Black Rot Disease',
+                summary: `As with many other diseases, sanitation is one of the major factors. Remove mummified fruit, dead trees, dead or dying infected limbs. Prune out cankersto greatly reduce the amount of available inoculum. For homeowners, black rot can be controlled by starting a full-rate protectant spray program early in the season with copper-based products, lime-sulfur or Daconil. In commercial settings, apply one of the ethylene bisdithiocarbamate (EBDC) fungicides(Polyram, Manzate and Dithane). After petal fall, Captan at full rate, or a combination of Benlate and Captan, often used for powdery mildew control,
+                will provide black rot control as well.`
+            },
+            itemId: '6476076e2032483d324773e6'
+        },
+        {
+            diseaseName: 'Cedar Apple Rust',
+            cure: {
+                image: 'https://mdc.mo.gov/sites/default/files/styles/species_banner/public/2021-05/Cedar-Apple_Rust_Many_Galls_3-18-21.jpg?h=12a9b972&itok=3IYwD34-',
+                heading: 'Cedar Apple Rust Disease',
+                summary: `Tolerate leaf spots and fruit infection on apples, hawthorns, serviceberry and other plants in the Rosaceae family. They do not significantly affect the health of the tree if leaf loss does not occur.
+                Do not plant eastern red cedar and juniper plants within a few hundred yards of susceptible Rosaceae plants. This will reduce disease problems but not completely eliminate them.
+                Inspect nearby juniper and red cedar trees in late winter or early spring. Prune and remove brown, woody galls found before orange, gelatinous structures form in the spring. This will help reduce the level of infection on nearby Rosaceae plants.
+                Prune and remove infected twigs or branches on Rosaceae plants if they occur.`
             },
             itemId: '6476076e2032483d324773e6'
         },
@@ -75,13 +116,6 @@ const app_config = {
                 summary: 'Foliar fungicides can be used to control powdery mildew infection, application early in disease development is most effective. Avoid sowing back into wheat stubble from highly infected crops, mildew is carried as fruiting bodies on infested stubble. Wheat powdery mildew only infects wheat'
             },
             itemId: '6476076e2032483d324773e6'
-
-
-
-
-
-
-
         },
         {
             diseaseName: 'Rose black spot',
@@ -157,6 +191,52 @@ const app_config = {
                 image: 'https://www.growingproduce.com/wp-content/uploads/2019/08/bacterial_spot_tomato.jpg',
                 heading: 'Tomato Bacterial Spot ',
                 summary: "Use drip irrigation and avoid overhead irrigation if possible. Water plants in the morning to allow water on plants to evaporate quickly. Avoid handling plants while plants are wet. Pesticide: For homeowners, copper products or copper plus mancozeb are registered and effective to control bacterial spot of tomato.",
+            },
+            itemId: '6476076e2032483d324773e6'
+        },
+        {
+            diseaseName: 'Sawfly_Slug',
+            cure:
+            {
+                image: 'https://www.missouribotanicalgarden.org/Portals/0/Gardening/Gardening%20Help/images/Pests/Rose_Slugs1651.jpg',
+                heading: 'Rose Sawfly Slug Disease',
+                summary: `
+Sawfly larvae feed on the surface of leaves of their respective host plant, removing the soft tissue leaving behind the papery, translucent surface and veins. Heavy defoliation gives plants a brown scorched appearance. In general, light to moderate infestations are cosmetic in nature and rarely harm the host plant. Heavier attacks, however, can weaken plants when leaf loss stresses them to the point of vulnerability to other insect and disease attacks.
+
+1. Check plants for signs of infestation. Early detection can often result in simple cultural control measures. Begin looking for sawfly larvae in mid-spring (rose sawflies) or early summer (pear sawflies). Inspect both upper and lower surfaces of the leaves. For light infestations, remove the infested leaves and destroy the larvae. A forceful spray of water out of a garden hose can also provide control by knocking off and killing many of the soft-bodied larvae. Be sure to aim the water at both upper and undersides of leaves. Continue checking plants throughout the growing season.
+
+2. Support natural enemies of sawflies by responsible pesticide usage. Insects such as parasitic wasps, insectivorous birds, small mammals, predaceous beetles, as well as fungal and viral diseases all assist in keeping sawfly populations lower. Restraint in the use of pesticides allows beneficial species to assist your control efforts.
+
+3. Use an Insecticide. Chemical controls are also available, but should only be used when necessary, not routinely as a preventive measure. Horticultural oil, insecticidal soaps, neem oil, bifenthrin, carbaryl, malathion, permethrin, cyfluthrin, imidacloprid, and acephate can all be used to control sawflies. Apply pesticides only when larvae are actually present, before infestations reach critical levels. Always be careful to read the label directions fully before applying any pesticide, and follow directions completely. Not effective: Bacillus thuringiensis (Bt), a commonly used biological insecticide that offers control of many caterpillars, is NOT effective against sawfly larvae.
+                `,
+            },
+            itemId: '6476076e2032483d324773e6'
+        },
+        {
+            diseaseName: 'Rust',
+            cure:
+            {
+                image: 'https://www.jacksonandperkins.com/images/art/hand-holding-rose-leaf-with-rust.jpg',
+                heading: 'Rose Rust Disease',
+                summary: `Many home gardeners turn to neem oil as a treatment for infestations of mites, fungus and other plant diseases. Neem oil is distilled from the seeds of the neem tree and is a naturally occurring fungicide and pesticide. Used for hundreds of years as a treatment for agricultural issues, neem oil tends to have a sulfurous and garlicky smell.
+
+Neem oil should not be applied if the roses are under stress due to drought so make sure to water them thoroughly a few days before applying the oil. Follow directions on the package and make sure not to apply neem oil when the temperature is over 90 degrees Fahrenheit. Neem oil should not be applied within 30 days of having treated the plants with any sort of sulfur product. Do not apply neem oil to wet or damp plants and make sure that the humidity levels are moderate. It is best to apply neem oil to a small test section of the plant and wait 48 hours to make sure that the plant can tolerate the treatment. 
+
+How to Prevent Rose Rust
+Now that we have covered how to treat rust once it has attacked your roses, we will go over some methods of prevention so that it will not become a problem again going forward. There are many simple methods to help keep your roses healthy that can not only help them avoid illness, but can lead to stronger plants and better blooms. 
+
+Plant Roses in Full Sun
+For most varieties of roses, more sun means more happiness. Better exposure to sun also helps keep vegetation drier and can even kill off fungal spores.
+
+Space Plants Well
+Plant roses so that they are well spaced for good ventilation as well as preventing the spread of disease. Rose canes should not be touching from plant to plant and this also allows the gardener access to the plant from all sides for maintenance and treatment. 
+
+Water From Below
+We can't help where the rain comes from, but when watering roses, make sure to water at the roots or use a soaker hose system. Avoid splashing when watering to keep spore movement to a minimum. Save those sprinklers for the yard — or for the kids to play in. 
+
+Only Work with Dry Plants
+When heading out to prune, deadhead or collect blooms, make sure that the plants are dry. Working with damp plants is an easy way to spread fungal spores as well as other types of disease.
+                `,
             },
             itemId: '6476076e2032483d324773e6'
         },
