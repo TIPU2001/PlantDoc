@@ -42,8 +42,8 @@ const options = {
   flower: ["Rose"],
 
   fruit: ["Apple", "Peach"],
-  vegetable: ["Tomato", "Pepper", "Potato"],
-  crops: ["wheat", "rice"],
+  vegetable: ["Pepper", "Potato"],
+  crops: ["wheat"],
 
   plants: ["aloevera"],
 };
@@ -71,7 +71,7 @@ const PredictDiesease = () => {
 
   const [result, setResult] = useState(null);
 
-  
+
   const [currentUser, setCurrentUser] = useState(
     JSON.parse(sessionStorage.getItem("user")) || {}
   );
@@ -90,7 +90,7 @@ const PredictDiesease = () => {
       draggable: true,
     });
   };
-  
+
 
   let webcam, labelContainer;
 
@@ -116,7 +116,7 @@ const PredictDiesease = () => {
     setCamOpen(false);
   };
 
-  
+
   useEffect(() => {
     if (options[Category]) {
       // Check if options[type] exists
@@ -168,7 +168,7 @@ const PredictDiesease = () => {
       }
     );
     console.log(response.status);
-    if(res.status === 200){
+    if (res.status === 200) {
       // navigate('/user/history');
       const data = await response.json();
       console.log(data);
@@ -195,7 +195,7 @@ const PredictDiesease = () => {
     let modelT = await window.tmImage.load(modelURL, metadataURL);
     setMaxPredictions(modelT.getTotalClasses());
     setModel(modelT);
-    
+
     console.log(selModel, " Model loaded");
 
     // stop loading here
@@ -222,7 +222,7 @@ const PredictDiesease = () => {
     if (saveHistoryOption) {
       await saveHistory(res);
     }
-    
+
   };
   {
     saveHistoryOption && (
@@ -387,7 +387,7 @@ const PredictDiesease = () => {
           </Typography>
         </div>
       </Box>
-      <Container sx={{mb:5}}>
+      <Container sx={{ mb: 5 }}>
         {/* <select className="form-control" onChange={e => setSelModel(e.target.value.toLowerCase())}>
         <option value="">Select a Model</option>
         {
@@ -396,14 +396,14 @@ const PredictDiesease = () => {
       </select> */}
         <ToastContainer />
         <FormControlLabel
-    control={
-      <Checkbox
-        checked={saveHistoryOption}
-        onChange={(e, v) => setsaveHistoryOption(v)}
-      />
-    }
-    label="Save Diagnosed History"
-  />
+          control={
+            <Checkbox
+              checked={saveHistoryOption}
+              onChange={(e, v) => setsaveHistoryOption(v)}
+            />
+          }
+          label="Save Diagnosed History"
+        />
         <FormControl required fullWidth sx={{ mt: 2 }}>
           <InputLabel id="model-select">Select a Model</InputLabel>
           <Select
@@ -571,7 +571,7 @@ const PredictDiesease = () => {
                     fontSize: "18px",
                   }}
                   startIcon={<CloudUpload />}
-                  component="div" 
+                  component="div"
                 >
                   Upload Leaf Image
                 </Button>
